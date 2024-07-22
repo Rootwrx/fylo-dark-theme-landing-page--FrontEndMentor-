@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  padding-right: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+}
+
+/* Tablet and larger */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* End Primary Components*/
+
+.cta-btn {
+  font-family: var(--ff-ralway);
+  text-transform: capitalize;
+  background: var(--gradient-cta);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--br-pile);
+  font-weight: var(--fw-bold);
+  transition: var(--transition-speed);
+  white-space: nowrap;
+}
+
